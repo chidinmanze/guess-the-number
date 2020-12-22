@@ -69,3 +69,18 @@ function resetGame() {
 
   randomNumber = Math.floor(Math.random() * 100) + 1;
 }
+
+const settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://numbersapi.p.rapidapi.com/6/21/date?fragment=true&json=true",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "dfb4ad9e0emshb20d7926a8a2460p105065jsn39406817346e",
+		"x-rapidapi-host": "numbersapi.p.rapidapi.com"
+	}
+};
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
