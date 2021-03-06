@@ -9,27 +9,45 @@
 
   <body>
     <div id="guess">
-    <h1>Guess The Number</h1>
+      <h1>Guess The Number</h1>
 
-    <p>
-      We have selected a random number between 1 and 100. See if you can guess
-      it in 10 turns or fewer. We'll tell you if your guess was too high or too
-      low.
-    </p>
+      <p>
+        We have selected a random number between 1 and 100. See if you can guess
+        it in 10 turns or fewer. We'll tell you if your guess was too high or
+        too low.
+      </p>
 
-    <div class="form">
-      <label for="guessField">Enter a guess: </label>
-      <input type="text" id="guessField" class="guessField" />
-      <input type="submit" value="Submit guess" class="guessSubmit" />
+      <div class="form">
+        <label for="guessField">Enter a guess: </label>
+        <input type="text" id="guessField" class="guessField" />
+        <input type="submit" value="Submit guess" class="guessSubmit" />
+      </div>
+
+      <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+      </div>
+      <div id="reset"></div>
     </div>
 
-    <div class="resultParas">
-      <p class="guesses"></p>
-      <p class="lastResult"></p>
-      <p class="lowOrHi"></p>
-    </div>
-  </div>
 
-    <script src="./script.js"> </script>
+    <div id="random">
+      <h1>Random Number Facts</h1>
+
+      <form>
+        <input type="text">
+        <input type="submit" value="Enter">
+
+
+      </form>
+
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

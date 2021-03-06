@@ -9,11 +9,11 @@ h1 {
 }
 
   body {
-    width: 50%;
+    /* width: 50%;
     max-width: 800px;
     min-width: 480px;
-    margin: 0 auto;
-    background-image: url('numbers.jpg');
+    margin: 0 auto; */
+   
   }
 
   .lastResult {
