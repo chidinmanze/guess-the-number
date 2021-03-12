@@ -70,10 +70,18 @@ function resetGame() {
   randomNumber = Math.floor(Math.random() * 100) + 1;
 }
 
+
+$("#enter").on("click", function getNumberFact(event) {
+ event.preventDefault();
+  var number = $("#entry").val();
+  console.log(number);
+
+var queryURL = "https://numbersapi.p.rapidapi.com/" + number + "/math?fragment=true&json=true";
+
 const settings = {
 	"async": true,
 	"crossDomain": true,
-	"url": "https://numbersapi.p.rapidapi.com/6/21/date?fragment=true&json=true",
+	"url": queryURL,
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-key": "dfb4ad9e0emshb20d7926a8a2460p105065jsn39406817346e",
@@ -84,3 +92,7 @@ const settings = {
 $.ajax(settings).done(function (response) {
 	console.log(response);
 });
+
+
+});
+
