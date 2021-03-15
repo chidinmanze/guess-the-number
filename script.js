@@ -90,7 +90,8 @@ const settings = {
 };
 
 $.ajax(settings).done(function (response) {
-	console.log(response);
+	$("#results").html(response.text)
+  console.log(response);
 });
 
 
